@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TextWave</string>
+    <string name="action_settings">Settings</string>
+    <string name="test">GitHub is where people build software.</string>
+</resources>
