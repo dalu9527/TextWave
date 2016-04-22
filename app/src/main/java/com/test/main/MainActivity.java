@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         WaveTextView waveTextView = (WaveTextView)findViewById(R.id.waveTextView);
         assert waveTextView != null;
-        waveTextView.setString(getResources().getString(R.string.test));
-        waveTextView.startWave();
+//        waveTextView.setString(getResources().getString(R.string.test));
+//        waveTextView.startWave();
         setSupportActionBar(toolbar);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         assert fab != null;

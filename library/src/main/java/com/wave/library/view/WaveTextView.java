@@ -65,6 +65,8 @@ public class WaveTextView extends View {
         int textColor = typedarray.getColor(R.styleable.WaveTextView_textColor,
                 0xFFFF0000);
         mTextSize = typedarray.getDimension(R.styleable.WaveTextView_textSize, 36);
+        mString = typedarray.getString(R.styleable.WaveTextView_text);
+        mStarted = typedarray.getBoolean(R.styleable.WaveTextView_autoStart, false);
         typedarray.recycle();
         init(textColor, mTextSize, mWaveSpeed);
     }
@@ -81,6 +83,8 @@ public class WaveTextView extends View {
         int textColor = typedarray.getColor(R.styleable.WaveTextView_textColor,
                 0xFFFF0000);
         mTextSize = typedarray.getDimension(R.styleable.WaveTextView_textSize, 36);
+        mString = typedarray.getString(R.styleable.WaveTextView_text);
+        mStarted = typedarray.getBoolean(R.styleable.WaveTextView_autoStart, false);
         typedarray.recycle();
         init(textColor, mTextSize, mWaveSpeed);
     }
@@ -209,6 +213,9 @@ public class WaveTextView extends View {
         mWaveSpeed = ScreenUtil.dip2px(mContext, waveSpeed);
         myHandler = new MyHandler(WaveTextView.this);
         mPath = new Path();
+        if (mStarted) {
+            myHandler.sendEmptyMessage(0);
+        }
     }
 
     /**

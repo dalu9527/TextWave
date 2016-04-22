@@ -21,6 +21,8 @@
         wave:textSize="17sp"
         wave:waveSpeed="1"
         wave:waveAmplitudes="20"
+        wave:autoStart="true"
+        wave:text="@string/test"
         android:gravity="center"
         />
 </RelativeLayout>
