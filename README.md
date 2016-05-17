@@ -6,16 +6,22 @@
 
 ![](http://i.imgur.com/CPSZPLG.gif)
 
+## 更新 ##
+
+- 0.0.1：完成了初级的搭建
+- 0.0.2：修复了最低版本过高的问题；补充了自主设定的布局属性
+
 ## 使用方法 ##
 
 **在build.gradle中添加：**
 
-	compile 'com.dalu9527:TextWave:0.0.1'
+	compile 'com.dalu9527:TextWave:0.0.2'
 
 
 **在布局中使用：**
 
 	<com.wave.library.view.WaveTextView
+    		xmlns:wave="http://schemas.android.com/apk/res-auto"
 	        android:id="@+id/waveTextView"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
@@ -50,15 +56,21 @@ This project implements an animation of the text：wave. As shown in the figure 
 
 ![](http://i.imgur.com/CPSZPLG.gif)
 
+## Update ##
+
+- 0.0.1：complete the original work
+- 0.0.2：fix the minSdk too hight；supply the wave's attr
+
 ## Usage ##
 
 **In build.gradle add：**
 
-	compile 'com.dalu9527:TextWave:0.0.1'
+	compile 'com.dalu9527:TextWave:0.0.2'
 
 **In Your Layout：**
 
 	<com.wave.library.view.WaveTextView
+			xmlns:wave="http://schemas.android.com/apk/res-auto"
 	        android:id="@+id/waveTextView"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
